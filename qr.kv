@@ -1,0 +1,21 @@
+<QRLayout>:
+    orientation: 'vertical'
+    padding: 20
+    spacing: 15
+
+    TextInput:
+        id: input_field
+        hint_text: "Enter text or URL"
+        sie_hint_y: None
+        height: 50
+        multiline: False
+
+    Button:
+        text: "Generate QR Code"
+        size_hint_y: None
+        height: 50
+        on_press: root.generate_qr()
+
+    Image: 
+        id: qr_image
+        size_hint_y: 1
